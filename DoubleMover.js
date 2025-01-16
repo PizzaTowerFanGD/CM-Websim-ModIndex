@@ -48,6 +48,6 @@ processDoubleMover(cell)
 doublemover.onPush = (cell) => {
 return 1;
 };
-crab.name = 'Double Mover'
-crab.description = 'Moves twice as fast as an original mover.';
+doublemover.name = 'Double Mover'
+doublemover.description = 'Moves twice as fast as an original mover.';
 ModAPI.registerCellType(doublemover);
