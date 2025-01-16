@@ -38,3 +38,16 @@ function processDoubleMover(cell) {
   }
   cell.hasMoved = true;
 }
+doublemover = {}
+doublemover = "doublemover"
+doublemover.imgSrc = 'https://github.com/user-attachments/assets/09a5d38f-2953-497b-86ff-4b6442e34fc0' 
+
+doublemover.onTick = (cell) => {
+processDoubleMover(cell)
+};
+doublemover.onPush = (cell) => {
+return 1;
+};
+crab.name = 'Double Mover'
+crab.description = 'Moves twice as fast as an original mover.';
+ModAPI.registerCellType(doublemover);
